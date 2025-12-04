@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Baseball - Cheering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CHEERING.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Image/logo_01.png" alt="K-Baseball Logo">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="STADIUM.html" data-i18n="navStadium">STADIUM</a></li>
+                    <li><a href="SCHEDULE.html" data-i18n="navSchedule">SCHEDULE</a></li>
+                    <li><a href="TICKET.html" data-i18n="navTicket">TICKET</a></li>
+                    <li><a href="CHEERING.html" data-i18n="navCheering" class="active">CHEERING</a></li>
+                    <li><a href="FOOD.html" data-i18n="navFood">FOOD</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="lang-select desktop-lang-select">
+                    <i class="fas fa-globe-americas"></i>
+                    <ul class="lang-menu">
+                        <li data-lang="ko">한국어</li>
+                        <li data-lang="en">English</li>
+                    </ul>
+                </div>
+                <button class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <div class="mobile-nav-inner">
+            <div class="mobile-lang-select">
+                <button class="lang-toggle-btn" data-lang="ko">한국어</button>
+                <button class="lang-toggle-btn" data-lang="en">English</button>
+            </div>
+            <ul>
+                <li><a href="STADIUM.html" data-i18n="navStadium">STADIUM</a></li>
+                <li><a href="SCHEDULE.html" data-i18n="navSchedule">SCHEDULE</a></li>
+                <li><a href="TICKET.html" data-i18n="navTicket">TICKET</a></li>
+                <li><a href="CHEERING.html" data-i18n="navCheering" class="active">CHEERING</a></li>
+                <li><a href="FOOD.html" data-i18n="navFood">FOOD</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="cheering-main">
+        <section class="cheering-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="heroTitle">HOW SHOULD I CHEER?</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Immerse yourself in special stadium vibes like no place on earth! Discover how to enjoy the exciting world of K-Baseball with everything from cheering songs to dance moves and official team merchandise. We'll guide you on where to grab your team gear and how to cheer like a seasoned pro. While, the passion lives on!</p>
+            </div>
+        </section>
+
+        <section class="cheering-items-section">
+            <div class="items-container">
+                <h2 class="section-title">K-Baseball cheers with this!</h2>
+                
+                <div class="carousel-container">
+                    <div class="items-carousel">
+                        <div class="item-card" data-item="1">
+                            <img src="Image/CHEERING/Item1.png" alt="Baseball Cap" class="item-image">
+                        </div>
+                        <div class="item-card" data-item="2">
+                            <img src="Image/CHEERING/Item2.png" alt="Thunder Stick" class="item-image">
+                        </div>
+                        <div class="item-card" data-item="3">
+                            <img src="Image/CHEERING/Item3.png" alt="Cheering Towel" class="item-image">
+                        </div>
+                        <div class="item-card" data-item="4">
+                            <img src="Image/CHEERING/Item4.png" alt="Mini Flag" class="item-image">
+                        </div>
+                        <div class="item-card" data-item="5">
+                            <img src="Image/CHEERING/Item5.png" alt="Team Gloves" class="item-image">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-info">
+                    <h3 class="item-name" id="item-name">Baseball cap</h3>
+                    <p class="item-description" id="item-description">It is not just a simple hat, but a symbol of loyalty and enthusiasm to the team. Show your support by wearing the team logo and color of the team cap hat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="official-goods-section">
+            <div class="goods-container">
+                <h2 class="section-title-white">OFFICIAL GOODS STORE</h2>
+                <h1 class="section-subtitle">Visit the official store for your favorite team's merchandise.</h1>
+                
+                <div class="goods-carousel-container">
+                    <button class="goods-carousel-btn goods-prev" id="goods-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="goods-carousel-wrapper">
+                        <div class="goods-carousel">
+                            </div>
+                    </div>
+                    
+                    <button class="goods-carousel-btn goods-next" id="goods-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                </div>
+        </section>
+
+        <section class="sportsdb-section">
+            <div class="sportsdb-container">
+                <div class="sportsdb-header">
+                    <div class="sportsdb-name" id="sportsdb-name">SPORTS DB</div>
+                    <p class="sportsdb-description">Sports DB is a YouTube platform that provides content from each KBO team
+                        <br>and the latest cheer songs and dance videos. Stay updated with the newest cheers!</p>
+                </div>
+                
+                <div class="videos-carousel-container">
+                    <button class="video-carousel-btn video-prev" id="video-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="videos-grid" id="videos-grid">
+                        </div>
+                    
+                    <button class="video-carousel-btn video-next" id="video-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <img src="Image/logo_01.png" alt="K-Baseball Logo" style="width: 40px; height: 40px;">
+                <div class="socials">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2025 K-Baseball. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="CHEERING.js"></script>
+</body>
+</html>

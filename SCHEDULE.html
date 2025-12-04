@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Baseball - Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="SCHEDULE.css"> 
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Image/logo_01.png" alt="K-Baseball Logo">
+                </a>
+            </div>
+    
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="STADIUM.html">STADIUM</a></li>
+                    <li><a href="SCHEDULE.html">SCHEDULE</a></li>
+                    <li><a href="TICKET.html">TICKET</a></li>
+                    <li><a href="CHEERING.html">CHEERING</a></li>
+                    <li><a href="FOOD.html">FOOD</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header-right">
+                <div class="lang-select desktop-lang-select">
+                    <i class="fas fa-globe-americas"></i>
+                    <ul class="lang-menu">
+                        <li data-lang="ko">한국어</li>
+                        <li data-lang="en">English</li>
+                    </ul>
+                </div>
+                <button class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <div class="mobile-nav-inner">
+            <div class="mobile-lang-select">
+                <button class="lang-toggle-btn" data-lang="ko">한국어</button>
+                <button class="lang-toggle-btn" data-lang="en">English</button>
+            </div>
+            <ul>
+                <li><a href="STADIUM.html" data-i18n="navStadium">STADIUM</a></li>
+                <li><a href="SCHEDULE.html" data-i18n="navSchedule">SCHEDULE</a></li>
+                <li><a href="TICKET.html" data-i18n="navTicket">TICKET</a></li>
+                <li><a href="CHEERING.html" data-i18n="navCheering">CHEERING</a></li>
+                <li><a href="FOOD.html" data-i18n="navFood">FOOD</a></li>
+            </ul>
+        </div>
+    </nav>
+<main class="schedule-main">
+    <!-- Hero Section -->
+    <section class="schedule-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="heroTitle">WHEN IS THE NEXT GAME?</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Here's the complete KBO League game schedule. Simply select a date from the calendar and instantly see the matchups and times for every game taking place across the country. Don't miss your favorite team's game!</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <img src="Image/SCHEDULE/Schedule.png" alt="Schedule Background" class="schedule-bg">
+        <div class="schedule-container">
+            <h2 class="section-title">Check The Game Schedule At a Glance!</h2>
+            
+            <!-- 날짜 선택기 -->
+            <div class="date-selector">
+                <button id="prev-date">◀</button>
+                <select id="year-select"></select>
+                <select id="month-select"></select>
+                <select id="day-select"></select>
+                <button id="next-date">▶</button>
+            </div>
+            
+            <!-- 게임 카드 컨테이너 (검은색 테두리) -->
+            <div class="games-container">
+                <img id="games-img" src="Image/SCHEDULE/games/2025-06-10.png" alt="Today's Games">
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <img src="Image/logo_01.png" alt="K-Baseball Logo" style="width: 40px; height: 40px;">
+                <div class="socials">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2025 K-Baseball. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="SCHEDULE.js"></script> 
+</body>
+</html>

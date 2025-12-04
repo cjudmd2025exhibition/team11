@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Baseball - Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="FOOD.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Image/logo_01.png" alt="K-Baseball Logo">
+                </a>
+            </div>
+    
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="STADIUM.html">STADIUM</a></li>
+                    <li><a href="SCHEDULE.html">SCHEDULE</a></li>
+                    <li><a href="TICKET.html">TICKET</a></li>
+                    <li><a href="CHEERING.html">CHEERING</a></li>
+                    <li><a href="FOOD.html">FOOD</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header-right">
+                <div class="lang-select desktop-lang-select">
+                    <i class="fas fa-globe-americas"></i>
+                    <ul class="lang-menu">
+                        <li data-lang="ko">한국어</li>
+                        <li data-lang="en">English</li>
+                    </ul>
+                </div>
+                <button class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <div class="mobile-nav-inner">
+            <div class="mobile-lang-select">
+                <button class="lang-toggle-btn" data-lang="ko">한국어</button>
+                <button class="lang-toggle-btn" data-lang="en">English</button>
+            </div>
+            <ul>
+                <li><a href="STADIUM.html" data-i18n="navStadium">STADIUM</a></li>
+                <li><a href="SCHEDULE.html" data-i18n="navSchedule">SCHEDULE</a></li>
+                <li><a href="TICKET.html" data-i18n="navTicket">TICKET</a></li>
+                <li><a href="CHEERING.html" data-i18n="navCheering">CHEERING</a></li>
+                <li><a href="FOOD.html" data-i18n="navFood">FOOD</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="stadium-main">
+        <!-- Hero Section -->
+        <section class="stadium-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="foodHeroTitle">K-Baseball food, what should I eat?</h1>
+                <p class="hero-subtitle" data-i18n="foodHeroSubtitle">The joy of combining baseball and food is incomparable to the delicious <br> food. Discover what restaurants are available at each stadium and the must-try dishes recommended by local fans.</p>
+            </div>
+        </section>
+
+        <!-- Side Navigation -->
+        <div class="side-nav">
+            <ul>
+                <li><a href="#Seoul" data-i18n="navSeoul">Seoul</a></li>
+                <li><a href="#Suwon" data-i18n="navSuwon">Suwon</a></li>
+                <li><a href="#Incheon" data-i18n="navIncheon">Incheon</a></li>
+                <li><a href="#Daejeon" data-i18n="navDaejeon">Daejeon</a></li>
+                <li><a href="#Busan" data-i18n="navBusan">Busan</a></li>
+                <li><a href="#Changwon" data-i18n="navChangwon">Changwon</a></li>
+                <li><a href="#Gwangju" data-i18n="navGwangju">Gwangju</a></li>
+                <li><a href="#Daegu" data-i18n="navDaegu">Daegu</a></li>
+            </ul>
+        </div>
+
+        <!-- Food Sections -->
+        <div class="stadium-sections">
+            <!-- Seoul Section -->
+            <section class="food-section" id="Seoul">
+                <!-- Top 3 Section -->
+                <div class="top3-container">
+                    <h2 class="stadium-name" data-i18n="seoulTitle">Seoul Sports Complex Baseball Stadium</h2>
+                    <p class="top3-label" data-i18n="mustTryTop3">MUST-TRY FOODS TOP3</p>
+                    <div class="top3-grid">
+                        <div class="top3-card">
+                            <img src="Image/FOOD/Seoul_top1.png" alt="Jamshil One-Shot">
+                        </div>
+                        <div class="top3-card">
+                            <img src="Image/FOOD/Seoul_top2.png" alt="Tong Bbap">
+                        </div>
+                        <div class="top3-card">
+                            <img src="Image/FOOD/Seoul_top3.png" alt="Igane Tteokbokki">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gate Map Section -->
+                <div class="gate-map-container">
+                    <p class="gate-label" data-i18n="gateLabel">1-4 GATE</p>
+                    <h3 class="gate-title" data-i18n="outfieldFirstBase">Outside first base</h3>
+                    
+                    <div class="gate-content">
+                        <div class="gate-side-nav">
+                            <ul>
+                                <li><a href="#" class="gate-link active" data-gate="outside-first" data-i18n="outfieldFirst">Outfield first base</a></li>
+                                <li><a href="#" class="gate-link" data-gate="outside-third" data-i18n="outfieldThird">Outfield third base</a></li>
+                                <li><a href="#" class="gate-link" data-gate="infield-first" data-i18n="infieldFirst">Infield first base</a></li>
+                                <li><a href="#" class="gate-link" data-gate="infield-third" data-i18n="infieldThird">Infield third base</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="gate-map-image">
+                            <img src="Image/FOOD/Seoul_outside_first.png" alt="Stadium Gate Map" id="gateMapImage">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Grid Section -->
+                <div class="food-grid-container">
+                    <div class="food-grid" id="foodGrid">
+                        <div class="food-item" style="animation-delay: 0.1s">
+                            <a href="https://share.diningcode.com/profile.php?rid=ztVPEx41kViC">
+                            <img src="Image/FOOD/Seoul_01.png" alt="BBQ">
+                            </a>
+                        </div>
+                        <div class="food-item" style="animation-delay: 0.2s">
+                            <a href="https://share.diningcode.com/profile.php?rid=c3gUa4S4voBB"></a>
+                            <img src="Image/FOOD/Seoul_02.png" alt="BHC">
+                        </div>
+                        <div class="food-item" style="animation-delay: 0.3s">
+                            <img src="Image/FOOD/Seoul_03.png" alt="Gazzi">
+                        </div>
+                        <div class="food-item" style="animation-delay: 0.4s">
+                            <img src="Image/FOOD/Seoul_04.png" alt="One-Shot">
+                        </div>
+                        <div class="food-item" style="animation-delay: 0.5s">
+                            <img src="Image/FOOD/Seoul_05.png" alt="Cafe">
+                        </div>
+                        <div class="food-item" style="animation-delay: 0.6s">
+                            <img src="Image/FOOD/Seoul_06.png" alt="Jjamppong">
+                        </div>
+                        <div class="food-item" style="animation-delay: 0.7s">
+                            <img src="Image/FOOD/Seoul_07.png" alt="Frank Burger">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional stadium sections would go here following the same pattern -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <img src="Image/logo_01.png" alt="K-Baseball Logo" style="width: 40px; height: 40px;">
+                <div class="socials">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2025 K-Baseball. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="FOOD.js"></script>
+</body>
+</html>

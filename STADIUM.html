@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Baseball - Stadium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="STADIUM.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Image/logo_01.png" alt="K-Baseball Logo">
+                </a>
+            </div>
+    
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="STADIUM.html">STADIUM</a></li>
+                    <li><a href="SCHEDULE.html">SCHEDULE</a></li>
+                    <li><a href="TICKET.html">TICKET</a></li>
+                    <li><a href="CHEERING.html">CHEERING</a></li>
+                    <li><a href="FOOD.html">FOOD</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header-right">
+                <div class="lang-select desktop-lang-select">
+                    <i class="fas fa-globe-americas"></i>
+                    <ul class="lang-menu">
+                        <li data-lang="ko">한국어</li>
+                        <li data-lang="en">English</li>
+                    </ul>
+                </div>
+                <button class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <div class="mobile-nav-inner">
+            <div class="mobile-lang-select">
+                <button class="lang-toggle-btn" data-lang="ko">한국어</button>
+                <button class="lang-toggle-btn" data-lang="en">English</button>
+            </div>
+            <ul>
+                <li><a href="STADIUM.html" data-i18n="navStadium">STADIUM</a></li>
+                <li><a href="SCHEDULE.html" data-i18n="navSchedule">SCHEDULE</a></li>
+                <li><a href="TICKET.html" data-i18n="navTicket">TICKET</a></li>
+                <li><a href="CHEERING.html" data-i18n="navCheering">CHEERING</a></li>
+                <li><a href="FOOD.html" data-i18n="navFood">FOOD</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="stadium-main">
+        <section class="stadium-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="heroTitle">WHERE CAN I WATCH A GAME?</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Explore where to enjoy Korean Baseball! Each stadium offers a unique vibe. From bustling Seoul to charming smaller cities, find the perfect spot to watch. Check each stadium's seating, facilities, and atmosphere to pick the best place for you.</p>
+            </div>
+        </section>
+
+        <div class="side-nav">
+            <ul>
+                <li><a href="#Seoul" data-i18n="navSeoul">Seoul</a></li>
+                <li><a href="#Suwon" data-i18n="navSuwon">Suwon</a></li>
+                <li><a href="#Incheon" data-i18n="navIncheon">Incheon</a></li>
+                <li><a href="#Daejeon" data-i18n="navDaejeon">Daejeon</a></li>
+                <li><a href="#Busan" data-i18n="navBusan">Busan</a></li>
+                <li><a href="#Changwon" data-i18n="navChangwon">Changwon</a></li>
+                <li><a href="#Gwangju" data-i18n="navGwangju">Gwangju</a></li>
+                <li><a href="#Daegu" data-i18n="navDaegu">Daegu</a></li>
+            </ul>
+        </div>
+
+        <div class="stadium-sections">
+            <section class="stadium-section" id="Seoul">
+                <div class="stadium-container">
+                    <div class="stadium-content">
+                        <div class="stadium-text">
+                            <span class="stadium-number">01</span>
+                            <h2 class="stadium-name" data-i18n="seoulTitle">Seoul Sports Complex Baseball Stadium</h2>
+                            <p class="stadium-description" data-i18n="seoulDesc">It is used as the home ground for the KBO League's Doosan Bears and LG Twins, and is commonly referred to as Jamsil Baseball Stadium.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="seoulLocation">19-2, Songpa-gu, Seoul Sports Complex</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="seoulTeams">Teams: Doosan Bears, LG Twins</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://naver.me/5WOuaxG1" target="_blank" class="stadium-images" title="Seoul Sports Complex Baseball Stadium Location">
+                        <img src="Image/STADIUM/Seoul_img.png" alt="Seoul Sports Complex Baseball Stadium" class="stadium-img">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stadium-section" id="Suwon">
+                <div class="stadium-container">
+                    <div class="stadium-content reverse">
+                        <div class="stadium-text">
+                            <span class="stadium-number">02</span>
+                            <h2 class="stadium-name" data-i18n="suwonTitle">Suwon KT Wiz Park</h2>
+                            <p class="stadium-description" data-i18n="suwonDesc">Home to the KT Wiz, this modern stadium in Suwon opened in 2015. It features cutting-edge facilities and offers excellent sightlines from every seat.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="suwonLocation">1 Suwon-ro, Paldal-gu, Suwon</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="suwonTeam">Team: KT Wiz</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Suwon_img.png" alt="Suwon KT Wiz Park" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stadium-section" id="Incheon">
+                <div class="stadium-container">
+                    <div class="stadium-content">
+                        <div class="stadium-text">
+                            <span class="stadium-number">03</span>
+                            <h2 class="stadium-name" data-i18n="incheonTitle">Incheon SSG Landers Field</h2>
+                            <p class="stadium-description" data-i18n="incheonDesc">The SSG Landers call this beautiful waterfront stadium home. Located in Incheon, it offers stunning views of the surrounding area and is known for great food options.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="incheonLocation">618 Munemi-ro, Michuhol-gu, Incheon</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="incheonTeam">Team: SSG Landers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Incheon_img.png" alt="Incheon SSG Landers Field" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stadium-section" id="Daejeon">
+                <div class="stadium-container">
+                    <div class="stadium-content reverse">
+                        <div class="stadium-text">
+                            <span class="stadium-number">04</span>
+                            <h2 class="stadium-name" data-i18n="daejeonTitle">Daejeon Hanwha Life Ballpark</h2>
+                            <p class="stadium-description" data-i18n="daejeonDesc">Home of the Hanwha Eagles, this stadium in central South Korea creates an intimate atmosphere where fans feel close to the action.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="daejeonLocation">42 Daejong-ro, Jung-gu, Daejeon</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="daejeonTeam">Team: Hanwha Eagles</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Daejeon_img.png" alt="Daejeon Hanwha Life Ballpark" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stadium-section" id="Busan">
+                <div class="stadium-container">
+                    <div class="stadium-content">
+                        <div class="stadium-text">
+                            <span class="stadium-number">05</span>
+                            <h2 class="stadium-name" data-i18n="busanTitle">Sajik Baseball Stadium</h2>
+                            <p class="stadium-description" data-i18n="busanDesc">Located in Busan, home to the Lotte Giants. Known for having some of the most passionate fans in Korean baseball, the atmosphere here is truly electric.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="busanLocation">45 Sajik-ro, Dongnae-gu, Busan</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="busanTeam">Team: Lotte Giants</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Busan_img.png" alt="Busan Sajik Baseball Stadium" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stadium-section" id="Changwon">
+                <div class="stadium-container">
+                    <div class="stadium-content reverse">
+                        <div class="stadium-text">
+                            <span class="stadium-number">06</span>
+                            <h2 class="stadium-name" data-i18n="changwonTitle">Changwon NC Park</h2>
+                            <p class="stadium-description" data-i18n="changwonDesc">The NC Dinos play at this modern facility in Changwon. It features comfortable seating and excellent amenities for a premium baseball experience.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="changwonLocation">361 Changwon-ro, Changwon</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="changwonTeam">Team: NC Dinos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Changwon_img.png" alt="Changwon NC Park" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stadium-section" id="Gwangju">
+                <div class="stadium-container">
+                    <div class="stadium-content">
+                        <div class="stadium-text">
+                            <span class="stadium-number">07</span>
+                            <h2 class="stadium-name" data-i18n="gwangjuTitle">Gwangju-KIA Champions Field</h2>
+                            <p class="stadium-description" data-i18n="gwangjuDesc">Home of the KIA Tigers, one of the most successful teams in Korea. Located in Gwangju, this stadium offers a traditional baseball experience with dedicated fans.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="gwangjuLocation">1 Imbangul-ro, Buk-gu, Gwangju</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="gwangjuTeam">Team: KIA Tigers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Gwangju_img.png" alt="Gwangju-KIA Champions Field" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="stadium-section" id="Daegu">
+                <div class="stadium-container">
+                    <div class="stadium-content reverse">
+                        <div class="stadium-text">
+                            <span class="stadium-number">08</span>
+                            <h2 class="stadium-name" data-i18n="daeguTitle">Daegu Samsung Lions Park</h2>
+                            <p class="stadium-description" data-i18n="daeguDesc">Home to the Samsung Lions in Daegu. Famous for its passionate crowd and excellent facilities, it offers an unforgettable baseball experience.</p>
+                            <div class="stadium-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="daeguLocation">125 Jangdeung-ro, Suseong-gu, Daegu</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-baseball"></i>
+                                    <span data-i18n="daeguTeam">Team: Samsung Lions</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadium-images">
+                            <img src="Image/STADIUM/Daegu_img.png" alt="Daegu Samsung Lions Park" class="stadium-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <img src="Image/logo_01.png" alt="K-Baseball Logo" style="width: 40px; height: 40px;">
+                <div class="socials">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2025 K-Baseball. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="STADIUM.js"></script>
+</body>
+</html>

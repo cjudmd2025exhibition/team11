@@ -1,0 +1,706 @@
+/* TICKET.css */
+/* Ticket Page Styles - Based on Stadium Design */
+:root {
+  --bg-dark: #1f1f1f;
+  --bg-light: #ffffff;
+  --bg-gray: #f2f2f2;
+  --text-dark: #101010;
+  --text-light: #ffffff;
+  --container-max: 1440px;
+  --grid-color: #d8d8d8;
+  --accent-red: #e63946;
+}
+
+  
+  .ticket-main {
+    padding-top: 64px;
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .ticket-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(22, 22, 22);
+    background: url('Image/TICKET/Main.png') no-repeat center center / cover;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 2rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.2rem, 3vw, 4rem);
+    font-weight: 800;
+    margin: 0 0 2rem;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto;
+    font-weight: 400;
+    opacity: 0.95;
+    letter-spacing: 0.01em;
+  }
+  
+  /* TICKET 페이지의 내비게이션 활성화 링크 색상 */
+  .main-nav ul li a[href="TICKET.html"] {
+    color: var(--accent-red) !important; 
+    font-weight: 700;
+  }
+  
+  /* Ticket Content Area */
+  .ticket-content {
+    min-height: 50vh;
+    padding: 0;
+    background: url('Image/TICKET/Tiket_Background.png') no-repeat center center / cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .ticket-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f2f2f2;
+    background-image: linear-gradient(to right, #d8d8d8 1px, transparent 1px);
+    background-size: 80px 100%;
+    z-index: -1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .ticket-section {
+    padding: 8rem 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    display: block !important;
+    visibility: visible !important;
+    z-index: 2;
+  }
+  
+  .ticket-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+  }
+  
+  /* 1. Online Ticketing Section */
+.ticketing-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .section-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--ticket-dark);
+  }
+  
+  .title-highlight {
+    background: var(--accent-red);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: var(--ticket-light-text);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ticketing-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .ticketing-steps::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-red);
+    z-index: 1;
+  }
+  
+  .step-box {
+    background: white;
+    border: 2px solid var(--accent-red);
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .step-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+  }
+  
+  .step-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ticket-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .step-description {
+    color: var(--ticket-light-text);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .team-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+  }
+  
+  .logo-item {
+    background: #f5f5f5;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ticket-light-text);
+  }
+  
+  .step-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .step-link {
+    color: var(--ticket-dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .step-link:hover {
+    color: var(--accent-red);
+  }
+  
+  /* 2. Seat Selection Section */
+  .seat-selection-section {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .seat-selection-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    min-height: 80vh;
+    padding: 4rem 0;
+  }
+  
+  .selection-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .selection-image {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    background: transparent !important;
+  }
+  
+  .floating-texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .floating-text {
+    position: absolute;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    animation: slideText 12s linear infinite;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  
+  .floating-text.filled {
+    color: var(--accent-red);
+  }
+  
+  .floating-text.outlined {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--accent-red);
+    text-stroke: 2px var(--accent-red);
+  }
+  
+  .floating-text:nth-child(1) { top: 15%; animation-delay: 0s; }
+  .floating-text:nth-child(2) { top: 25%; animation-delay: 1.5s; }
+  .floating-text:nth-child(3) { top: 35%; animation-delay: 3s; }
+  .floating-text:nth-child(4) { top: 45%; animation-delay: 4.5s; }
+  .floating-text:nth-child(5) { top: 55%; animation-delay: 6s; }
+  .floating-text:nth-child(6) { top: 65%; animation-delay: 7.5s; }
+  .floating-text:nth-child(7) { top: 75%; animation-delay: 9s; }
+  .floating-text:nth-child(8) { top: 85%; animation-delay: 10.5s; }
+  
+  @keyframes slideText {
+    0% { transform: translateX(100vw); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(-100vw); opacity: 0; }
+  }
+  
+  .selection-question {
+    text-align: center;
+    position: relative;
+  }
+  
+  .selection-question p {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 600;
+    color: var(--ticket-dark);
+    margin: 0;
+  }
+  
+  .question-decoration {
+    position: absolute;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
+  .burst {
+    color: var(--accent-red);
+    font-size: 1.2rem;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .wave {
+    color: var(--accent-red);
+    font-size: 1rem;
+    animation: wave 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+  
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+  }
+  
+  /* 3. Best Seat Section */
+  .best-seat-section {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .best-seat-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .best-seat-left {
+    position: relative;
+  }
+  
+  .best-seat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: transparent !important;
+  }
+  
+  .best-seat-right {
+    position: relative;
+  }
+  
+  .best-seat-text {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .best-seat-text p {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+    line-height: 1.6;
+    color: var(--ticket-dark);
+    margin: 0;
+  }
+  
+  .highlight-text {
+    background: var(--accent-red);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  
+  .best-seat-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.1;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* 4. Seat Proposal Section */
+  .seat-proposal-section {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .proposal-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .proposal-title {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 800;
+    color: var(--ticket-dark);
+    margin: 0;
+  }
+  
+  .seat-types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .seat-type {
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .seat-type:hover {
+    transform: translateY(-5px);
+  }
+  
+  .seat-image-container {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .seat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: transparent !important;
+  }
+  
+  .seat-title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 2rem 1.5rem 1rem;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .seat-title-overlay .seat-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .seat-title-overlay .seat-subtitle {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .seat-info {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .seat-description {
+    font-size: 0.95rem;
+    color: var(--ticket-text);
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+  
+  .seat-arrow {
+    font-size: 1.5rem;
+    color: var(--accent-red);
+    margin: 1rem 0;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  .audience-type {
+    background: var(--accent-red);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .ticket-main {
+      padding-top: 64px;
+    }
+    
+    .ticketing-steps {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .seat-types {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .best-seat-content {
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ticket-hero {
+      height: 80vh;
+    }
+  
+    .hero-title {
+      margin-bottom: 1.5rem;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+    }
+  
+    .hero-subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .ticket-section {
+      padding: 4rem 0;
+      min-height: auto; 
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    .ticketing-steps {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .step-box {
+      padding: 1.5rem;
+    }
+    
+    .seat-selection-content {
+      gap: 2rem;
+      min-height: auto;
+    }
+    
+    .selection-image-container {
+      height: 300px;
+    }
+    
+    .floating-text {
+      font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    }
+    
+    .best-seat-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .best-seat-text {
+      padding: 1.5rem;
+    }
+    
+    .seat-types {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .question-decoration {
+      right: -1rem;
+    }
+    
+    .selection-question p {
+      font-size: clamp(1rem, 3vw, 1.4rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content {
+      padding: 0 1.5rem;
+    }
+    
+    .ticket-section {
+      padding: 3rem 0;
+    }
+    
+    .section-title {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+    
+    .proposal-title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    
+    .step-box {
+      padding: 1rem;
+    }
+    
+    .step-title {
+      font-size: 1rem;
+    }
+    
+    .step-description {
+      font-size: 0.85rem;
+    }
+    
+    .team-logos {
+      gap: 0.3rem;
+    }
+    
+    .logo-item {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+    }
+    
+    .selection-image-container {
+      height: 250px;
+    }
+    
+    .floating-text {
+      font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+    
+    .best-seat-text {
+      padding: 1rem;
+    }
+    
+    .best-seat-text p {
+      font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+    }
+    
+    .seat-info {
+      padding: 1rem;
+    }
+    
+    .seat-name {
+      font-size: 1.1rem;
+    }
+    
+    .seat-description {
+      font-size: 0.85rem;
+    }
+    
+    .audience-type {
+      padding: 0.6rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
